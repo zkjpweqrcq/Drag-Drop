@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+
+	--main-bg-color: #5256ad;
+	--main-elements-color: #fff;
+
+	/* --main-bg-color: #250141;
+	--main-elements-color: #e11c4d; */
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	/* background: #5256ad; */
+	background: var(--main-bg-color);
+}
+
+.drag-area {
+	/* border: 2px dashed #fff; */
+	border: 2px dashed var(--main-elements-color);
+	height: 500px;
+	width: 700px;
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.drag-area.active {
+	/* border: 2px solid #fff; */
+	border: 2px solid var(--main-elements-color);;
+}
+
+.drag-area .icon {
+	/* color: #fff; */
+	color: var(--main-elements-color);
+	font-size: 100px;
+}
+
+.drag-area header {
+	font-size: 30px;
+	font-weight: 500;
+	/* color: #fff; */
+	color: var(--main-elements-color);
+}
+
+.drag-area span {
+	font-size: 25px;
+	font-weight: 500;
+	/* color: #fff; */
+	color: var(--main-elements-color);
+	margin: 10px 0 15px 0;
+}
+
+.drag-area button {
+	padding: 10px 25px;
+	font-size: 20px;
+	font-weight: 500;
+	/* border: none; */
+	outline: none;
+	/* background: #fff; */
+	background: var(--main-elements-color);
+	/* color: #5256ad; */
+	color: var(--main-bg-color);
+	border-radius: 5px;
+	cursor: pointer;
+	/* border: 1px solid #fff; */
+	border: 1px solid var(--main-elements-color);
+	transition: 0.4s;
+}
+
+.drag-area button:hover {
+	/* background: #5256ad; */
+	background: var(--main-bg-color);
+	/* color: #fff; */
+	color: var(--main-elements-color);
+}
